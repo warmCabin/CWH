@@ -92,6 +92,7 @@ public class ChessLogic {
     public static class King extends Piece {
         public King(boolean isWhite) {
             super(isWhite);
+            drawableID = white ? R.drawable.white_king : R.drawable.black_king;
         }
         HashSet<Integer> getMoves(int loc,Piece[][] board) {
             int r=loc/8,c=loc%8;
@@ -190,6 +191,7 @@ public class ChessLogic {
     public static class Bishop extends Piece {
         public Bishop(boolean isWhite) {
             super(isWhite);
+            drawableID = white ? R.drawable.white_bishop : R.drawable.black_bishop;
         }
         HashSet<Integer> getMoves(int loc,Piece[][] board){
             int r=loc/8,c=loc%8;
@@ -235,6 +237,7 @@ public class ChessLogic {
     public static class Queen extends Piece {
         public Queen(boolean isWhite) {
             super(isWhite);
+            drawableID = white ? R.drawable.white_queen : R.drawable.black_queen;
         }
 
         //This is basically a rook with a king's dr/dc array.

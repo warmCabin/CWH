@@ -66,8 +66,8 @@ public class BoardView extends View {
             board[6][j] = new Pawn(true);
         }
 
-        board[0] = new Piece[]{new Rook(false), new Knight(false), new Bishop(false), new King(false), new Queen(false), new Bishop(false), new Knight(false), new Rook(false)};
-        board[7] = new Piece[]{new Rook(true), new Knight(true), new Bishop(true), new King(true), new Queen(true), new Bishop(true), new Knight(true), new Rook(true)};
+        board[0] = new Piece[]{new Rook(false), new Knight(false), new Bishop(false), new Queen(false), new King(false), new Bishop(false), new Knight(false), new Rook(false)};
+        board[7] = new Piece[]{new Rook(true), new Knight(true), new Bishop(true), new Queen(true), new King(true), new Bishop(true), new Knight(true), new Rook(true)};
 
         highlighted = new HashSet<>();
 
